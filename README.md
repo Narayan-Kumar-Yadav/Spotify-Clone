@@ -136,7 +136,7 @@ public/
 | Database | Cloud Firestore |
 | State | Zustand |
 | Music API | Spotify Web API |
-| Deployment | Netlify |
+| Deployment | Vercel |
 
 ---
 
