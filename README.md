@@ -8,7 +8,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38bdf8?logo=tailwindcss)
 ![Zustand](https://img.shields.io/badge/Zustand-State%20Management-brown)
 
-**Live Demo:** [your-deployment-url.com](https://spotify-clone-gamma-vert.vercel.app/login) &nbsp;|&nbsp; **GitHub:** [Narayan-Kumar-Yadav/Spotify-Clone](https://github.com/Narayan-Kumar-Yadav/Spotify-Clone)
+**Live Demo:** [Deployment URL](https://spotify-clone-gamma-vert.vercel.app/login) &nbsp;|&nbsp; **GitHub:** [Narayan-Kumar-Yadav/Spotify-Clone](https://github.com/Narayan-Kumar-Yadav/Spotify-Clone)
 
 ---
 
