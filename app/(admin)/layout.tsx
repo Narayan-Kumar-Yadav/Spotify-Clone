@@ -4,11 +4,11 @@ import { MainContent } from "@/components/layout/MainContent";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { ProtectedRoute } from "@/features/auth/ProtectedRoute";
 
-type MainLayoutProps = {
+type AdminLayoutProps = {
   children: ReactNode;
 };
 
-export default function MainLayout({ children }: MainLayoutProps) {
+export default function AdminLayout({ children }: AdminLayoutProps) {
   return (
     <ProtectedRoute>
       <div className="bg-background text-textPrimary flex h-screen">

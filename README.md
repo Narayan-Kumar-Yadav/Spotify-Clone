@@ -1,101 +1,55 @@
-# Spotify Clone
+# 🎧 Spotify Clone – Full Stack Music Streaming App
 
-Production-grade starter architecture for a Spotify-like music streaming
-application built with Next.js App Router, TypeScript, Tailwind CSS, and strict
-linting standards.
+A production-ready Spotify-inspired music streaming application built with
+Next.js App Router, TypeScript, Firebase, Firestore, Zustand, and Tailwind CSS.
+It supports Spotify-powered discovery, admin-uploaded tracks, guest access, and
+resilient playback with a multi-source fallback audio system.
 
-## Tech Stack
+## 🚀 Features
 
-- Next.js `16.2.2` with App Router
-- React `19.2.4`
-- TypeScript with strict compiler settings
-- Tailwind CSS `4`
-- ESLint `9` + Prettier `3`
+- Spotify API integration (search, playlists)
+- Real audio playback system
+- Multi-source fallback audio (Spotify -> Admin -> Sample -> Local)
+- Admin panel (upload songs)
+- Google + Guest authentication
+- Firestore liked songs & playlists
+- Zustand-based player with queue, next/previous
 
-## Project Structure
+## 🧠 Tech Stack
 
-```text
-app/
-  (auth)/
-  (main)/
-  api/
-components/
-  ui/
-  layout/
-  music/
-  shared/
-features/
-  auth/
-  player/
-  playlist/
-  search/
-  library/
-lib/
-  firebase/
-  spotify/
-  utils/
-  hooks/
-store/
-styles/
-types/
+- Next.js (App Router)
+- TypeScript
+- Firebase Auth
+- Firestore
+- Zustand
+- Tailwind CSS
+
+## 🔐 Environment Variables
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+NEXT_PUBLIC_SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+ADMIN_EMAIL=
 ```
 
-## Directory Intent
+Copy `.env.local.example` to `.env.local` and fill in the required values before
+running the app.
 
-- `app/`: Route segments, layouts, and API entrypoints.
-- `components/`: Reusable presentational building blocks grouped by concern.
-- `features/`: Feature-scoped modules for business logic and feature UI.
-- `lib/`: Shared integrations, hooks, and application-level utilities.
-- `store/`: Future client/server state management layers.
-- `styles/`: Global styling entrypoints and shared style primitives.
-- `types/`: Shared TypeScript contracts and domain models.
+## ⚙️ Setup
 
-## Available Scripts
+```bash
+npm install
+npm run dev
+```
 
-- `npm run dev`: Start the local development server.
-- `npm run build`: Create the production build.
-- `npm run start`: Run the production server locally.
-- `npm run lint`: Run ESLint with zero warnings allowed.
-- `npm run lint:fix`: Automatically fix supported lint issues.
-- `npm run typecheck`: Run strict TypeScript checks.
-- `npm run format`: Format the codebase with Prettier.
-- `npm run format:check`: Verify formatting without writing changes.
+## 📸 Screenshots
 
-## Environment Variables
-
-Copy `.env.local.example` to `.env.local` and fill in the Firebase and Spotify
-credentials before implementing authentication or API integrations.
-
-## Local Development
-
-1. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-2. Create a local env file:
-
-   ```bash
-   cp .env.local.example .env.local
-   ```
-
-   On Windows PowerShell:
-
-   ```powershell
-   Copy-Item .env.local.example .env.local
-   ```
-
-3. Start the app:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000).
-
-## Notes
-
-- This repository intentionally includes only the application foundation.
-- No product features, authentication flows, or music playback logic are
-  implemented yet.
+- Home page screenshot: coming soon
+- Player screenshot: coming soon
+- Admin panel screenshot: coming soon

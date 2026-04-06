@@ -3,9 +3,11 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { Providers } from "@/app/providers";
+
 export const metadata: Metadata = {
+  description: "Spotify-inspired design system demo built with Next.js.",
   title: "Spotify Clone",
-  description: "Production-grade Spotify-inspired streaming app scaffold.",
 };
 
 type RootLayoutProps = Readonly<{
@@ -14,8 +16,10 @@ type RootLayoutProps = Readonly<{
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-[#121212] text-white antialiased">{children}</body>
+    <html data-scroll-behavior="smooth" lang="en" suppressHydrationWarning>
+      <body className="bg-background text-textPrimary min-h-screen antialiased">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
